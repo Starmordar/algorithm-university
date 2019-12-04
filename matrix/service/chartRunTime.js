@@ -1,4 +1,5 @@
 const ctx = document.getElementById('canvas').getContext('2d');
+
 const chart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -10,13 +11,13 @@ const chart = new Chart(ctx, {
             data: [0.072, 0.078, 6.075, 14.68, 83.387, 211.56, 498.125, 866.51],
             fill: false,
         },
-        // {
-        //     label: 'Create 2D random matrix (ms)',
-        //     backgroundColor: 'rgb(0, 0, 255)',
-        //     borderColor: 'rgb(0, 0, 255)',
-        //     data: [0.090, 0.134, 2.005, 62.145, 600.779, 1649.577, 3659.787, 7464.98],
-        //     fill: false,
-        // }
+        {
+            label: 'Create 2D random matrix (ms)',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0, 255)',
+            data: [0.090, 0.134, 2.005, 62.145, 600.779, 1649.577, 3659.787, 7464.98],
+            fill: false,
+        }
     ]
     },
     options: {
